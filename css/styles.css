@@ -731,6 +731,8 @@ ul {
 
 .modal-closer {
   position: absolute;
+  width: 18px;
+  height: 18px;
 
   top: 50%;
   left: 50%;
