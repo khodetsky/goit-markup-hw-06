@@ -349,6 +349,19 @@
                     </li>
                 </ul>
             </div>
+            <div class="subscribe-container">
+                <!-- <h2 class="subscribe-title">подпишитесь на рассылку</h2> -->
+                <form>
+                    <label for="subscribe" class="subscribe-title">подпишитесь на рассылку</label>
+                    <input type="email" name="email" placeholder="E-mail" id="subscribe">
+                    <button type="submit" class="submit-button">
+                        Подписаться
+                        <svg class="icon">
+                            <use href="./images/icons.svg#icon_subscribe"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
 
@@ -356,6 +369,33 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <form>
+                <label for="person" >Имя</label>
+                <div class="input-container">
+                    <input type="text" name="name" id="person" class="modal-input">
+                    <svg class="icon">
+                        <use href="./images/icons.svg#person"></use>
+                    </svg>
+                </div>
+                <label for="phone">Телефон</label>
+                <div class="input-container">
+                    <input type="tel" name="phone" id="phone" class="modal-input">
+                    <svg class="icon">
+                        <use href="./images/icons.svg#modal_phone"></use>
+                    </svg>
+                </div>
+                <label for="modal_email">Почта</label>
+                <div class="input-container">
+                    <input type="mail" name="mail" id="modal_email" class="modal-input">
+                    <svg class="icon">
+                        <use href="./images/icons.svg#modal_email"></use>
+                    </svg>
+                </div>
+                <label for="comment">Комментарий</label>
+                <textarea placeholder="Введите текст" id="comment"></textarea>
+                <button type="submit" class="submit-button">Отправить</button>
+            </form>
             <button class="modal-closer-button" type="button" data-modal-close>
                 <svg class="modal-closer" >
                     <use href="./images/icons.svg#modal_close"></use>
