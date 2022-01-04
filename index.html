@@ -350,9 +350,12 @@
                 </ul>
             </div>
             <div class="subscribe-container">
+                <h2 class="subscribe-title">подпишитесь на рассылку</h2>
                 <form>
-                    <label for="subscribe" class="subscribe-title">подпишитесь на рассылку</label>
-                    <input type="email" name="email" placeholder="E-mail" id="subscribe">
+                    <div class="input-container">
+                        <input type="email" name="email" placeholder=" " id="subscribe" class="subscribe-input">
+                        <label for="subscribe" class="subscribe-label">E-mail</label>
+                    </div>
                     <button type="submit" class="submit-button">
                         Подписаться
                         <svg class="icon">
@@ -393,6 +396,17 @@
                 </div>
                 <label for="comment">Комментарий</label>
                 <textarea placeholder="Введите текст" id="comment"></textarea>
+                <label class="modal-checkbox">
+                    <input type="checkbox" class="checkbox" name="conditions">
+                    <svg class="checkbox-notcheck">
+                        <use href="./images/icons.svg#icon_notcheck"></use>
+                    </svg>
+                    <svg class="checkbox-check">
+                        <use href="./images/icons.svg#icon_check"></use>
+                    </svg>
+                    <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю</span>
+                    <a href="" class="conditions-link">Условия договора</a>
+                </label>
                 <button type="submit" class="submit-button">Отправить</button>
             </form>
             <button class="modal-closer-button" type="button" data-modal-close>
